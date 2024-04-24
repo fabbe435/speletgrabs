@@ -2,12 +2,12 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 // Game variables
-let playerX = 200;
-let playerY = 380;
+let playerX = 190;
+let playerY = 450;
 let obstacleX = 0;
-let obstacleY = 200;
+let obstacleY = 215;
 let obstacleWidth = 150;
-let obstacleHeight = 50;
+let obstacleHeight = 30;
 let level = 1;
 
 // Initialize level display
@@ -19,8 +19,8 @@ function gameLoop() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   // Draw player
-  ctx.fillStyle = "blue";
-  ctx.fillRect(playerX, playerY, 25, 20);
+  ctx.fillStyle = "palegoldenrod";
+  ctx.fillRect(playerX, playerY, 20, 20);
 
   // Draw obstacle
   ctx.fillStyle = "red";
@@ -80,10 +80,10 @@ document.addEventListener("keydown", function (event) {
 
 // Reset game
 function resetGame() {
-  playerX = 200;
-  playerY = 380;
+  playerX = 190;
+  playerY = 450;
   obstacleX = 0;
-  obstacleY = 200;
+  obstacleY = 215;
 }
 
 // Start the game loop
