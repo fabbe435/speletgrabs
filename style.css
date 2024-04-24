@@ -1,0 +1,12 @@
+canvas {
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  width: 400px;
+  height: 500px;
+}
+
+body {
+  background-image: url("699f1e969165164e5b758bdb868bc6ca.png");
+}
