@@ -13,7 +13,7 @@ const obstacles = [
     [{ x: 0, y: 190, width: 100, height: 30 }, { x: -125, y: 150, width: 100, height: 30 }, { x: -250, y: 100, width: 100, height: 30 }] // Level 3: Three obstacles
 ];
 
-// Initialize level display
+// Visar vilken nivå man är på
 document.getElementById("levelDisplay").innerText = "Level " + level;
 
 // Game loop
@@ -72,7 +72,7 @@ document.addEventListener("keydown", function (event) {
     } else if (key === "ArrowRight" || key === "d") {
         playerX += 10;
     } else if (key === "ArrowUp" || key  === " ") {
-        playerY -= 10;
+        playerY -= 20;
     } else if (key === "ArrowDown" || key === "s") {
         playerY += 10;
     } 
