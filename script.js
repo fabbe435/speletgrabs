@@ -8,9 +8,9 @@ let level = 1;
 
 // Array to store obstacles for each level
 const obstacles = [
-    [{ x: 0, y: 215, width: 150, height: 30 }], // Level 1: One obstacle
-    [{ x: 0, y: 215, width: 150, height: 30 }, { x: -200, y: 170, width: 150, height: 30 }], // Level 2: Two obstacles
-    [{ x: 0, y: 215, width: 150, height: 30 }, { x: -200, y: 170, width: 150, height: 30 }, { x: -400, y: 130, width: 150, height: 30 }] // Level 3: Three obstacles
+    [{ x: 0, y: 190, width: 100, height: 30 }], // Level 1: One obstacle
+    [{ x: 0, y: 190, width: 100, height: 30 }, { x: -125, y: 150, width: 100, height: 30 }], // Level 2: Two obstacles
+    [{ x: 0, y: 190, width: 100, height: 30 }, { x: -125, y: 150, width: 100, height: 30 }, { x: -250, y: 100, width: 100, height: 30 }] // Level 3: Three obstacles
 ];
 
 // Initialize level display
