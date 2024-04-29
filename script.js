@@ -2,10 +2,14 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 // Game variables
-let playerX = 190;
-let playerY = 450;
-let level = 1;
+class Player{}
+    let playerX = 190;
+    let playerY = 450;
+    let level = 1;
 
+function randomX() {
+    return Math.floor(Math.random()*(600-400+1))+400; //Random spawnpoint for enemy x
+}
 // Array to store obstacles for each level
 const obstaclesLeft = [
     [{ x: -100, y: 190, width: 100, height: 30 }], // Level 1: One obstacle
@@ -13,8 +17,8 @@ const obstaclesLeft = [
     [{ x: 0, y: 190, width: 100, height: 30 }, { x: -125, y: 150, width: 100, height: 30 }, { x: -250, y: 100, width: 100, height: 30 }] // Level 3: Three obstacles
 ];
 const obstaclesRight = [
-    [{ x: 400, y: 280, width: 100, height: 30 }], // Level 4: One obstacle
-    [{ x: 400, y: 280, width: 100, height: 30 }, { x: 400, y: 320, width: 100, height: 30 }], // Level 5: Two obstacles
+    [{ x: randomX(), y: 280, width: 100, height: 30 }], // Level 4: One obstacle
+    [{ x: randomX(), y: 280, width: 100, height: 30 }, { x: randomX(), y: 320, width: 100, height: 30 }], // Level 5: Two obstacles
     [{ x: 400, y: 280, width: 100, height: 30 }, { x: 400, y: 320, width: 100, height: 30 }, { x: 400, y: 370, width: 100, height: 30 }] // Level 3: Three obstacles
 ];
 
@@ -57,7 +61,7 @@ function gameLoop() {
         ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
 
         // Move obstacle
-        if (level == 4){
+        if (level == 1){
           obstacle.x -= 2
         } else{
           obstacle.x -= 2*(level/2);
