@@ -15,7 +15,7 @@ const obstaclesLeft = [
 const obstaclesRight = [
     [{ x: 400, y: 280, width: 100, height: 30 }], // Level 4: One obstacle
     [{ x: 400, y: 280, width: 100, height: 30 }, { x: 400, y: 320, width: 100, height: 30 }], // Level 5: Two obstacles
-    [{ x: 400, y: 280, width: 100, height: 30 }, { x: 400, y: 320, width: 100, height: 30 }, { x: 400, y: 370, width: 100, height: 30 }] // Level 6: Three obstacles
+    [{ x: 400, y: 280, width: 100, height: 30 }, { x: 400, y: 320, width: 100, height: 30 }, { x: 400, y: 370, width: 100, height: 30 }] // Level 3: Three obstacles
 ];
 
 // Visar vilken nivå man är på
@@ -57,15 +57,14 @@ function gameLoop() {
         ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
 
         // Move obstacle
-        if (level = 1){
+        if (level == 4){
           obstacle.x -= 2
-        } else if (level <= 5){
+        } else{
           obstacle.x -= 2*(level/2);
-
+        }
         if (obstacle.x < -100) {
             obstacle.x = +canvas.width;
         }
-    }
 
         // Check for collision
         if (isColliding(playerX, playerY, 20, 20, obstacle.x, obstacle.y, obstacle.width, obstacle.height)) {
