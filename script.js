@@ -13,11 +13,12 @@ let playerY = 450;
 let level = 1;
 
 const playerImage = new Image();
-playerImage.src = 'Crocodile-PNG-File.png'; // Default skin
+playerImage.src = '/images/Crocodile-PNG-File.png'; // Default skin
 
 const skins = {
-    'skin1': '/images/Crocodile-PNG-File.png',
-    'skin2': '/images/Chicken_cartoon_04.svg.png'
+    'skin1': 'images/Crocodile-PNG-File.png',
+    'skin2': '/images/Chicken_cartoon_04.svg.png',
+    'skin3': '/images/PERSONALalla-1jj.jpg'
     // Add more skins here
 };
 
