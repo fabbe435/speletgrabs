@@ -16,8 +16,8 @@ const playerImage = new Image();
 playerImage.src = 'Crocodile-PNG-File.png'; // Default skin
 
 const skins = {
-    'skin1': 'Crocodile-PNG-File.png',
-    'skin2': 'Chicken_cartoon_04.svg.png'
+    'skin1': '/images/Crocodile-PNG-File.png',
+    'skin2': '/images/Chicken_cartoon_04.svg.png'
     // Add more skins here
 };
 
