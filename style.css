@@ -1,6 +1,6 @@
-canvas {
+#gameCanvas {
   border: 1px solid black;
-  display: block;
+  display: none;
   margin: 0 auto;
   background-color: white;
   background-image: url("222111'.png");
@@ -8,4 +8,37 @@ canvas {
 
 body {
   background-image: url("699f1e969165164e5b758bdb868bc6ca.png");
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#skinMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.menu-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.skin-option {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.skin-option:hover {
+  opacity: 50%;
 }

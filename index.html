@@ -7,11 +7,32 @@
     <link rel="stylesheet" href="style.css" />
     <audio
       src="b378992f203f4ed994d90a84c2169c83.HD-1080p-2.5Mbps-27697379.mp4"
-      controls
       autoplay
     ></audio>
   </head>
   <body>
+    <div id="menu">
+      <button class="menu-button" id="playButton">Play</button>
+      <button class="menu-button" id="skinChangeButton">Animal Selection</select></button>
+    </div>
+    <div id="skinMenu">
+      <img
+        class="skin-option"
+        src="Crocodile-PNG-File.png"
+        id="skin1"
+        width="100"
+        height="40"
+      />
+      <img
+        class="skin-option"
+        src="Chicken_cartoon_04.svg.png"
+        id="skin2"
+        width="100"
+        height="40"
+      />
+      <!-- Add more skin options here -->
+      <button class="menu-button" id="backButton">Back</button>
+    </div>
     <canvas id="gameCanvas" width="400" height="500"></canvas>
     <div id="levelDisplay" style="text-align: center; margin-top: 10px"></div>
     <script src="script.js"></script>
