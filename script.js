@@ -21,7 +21,7 @@ const skins = {
     'skin3': '/images/PERSONALalla-1jj.jpg'
     // Add more skins here
 };
-
+//
 function randomX() {
     return Math.floor(Math.random() * (600 - 400 + 1)) + 400; // Random spawnpoint for enemy x
 }
